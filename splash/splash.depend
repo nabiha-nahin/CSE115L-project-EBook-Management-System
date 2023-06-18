@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1687085331 source:c:\users\user\desktop\cse115l-project-ebook-management-system\splash\main.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-
