@@ -13,8 +13,7 @@ void displaySplashScreen() {
     }
 
      fclose(file);
+     printf("\n");
     // Wait for 3 seconds
-    clock_t start_time = clock();
-    while (clock() < start_time + 5 * CLOCKS_PER_SEC)
-        ;
+    sleep(3);
 }
