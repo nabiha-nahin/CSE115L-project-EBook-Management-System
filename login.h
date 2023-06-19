@@ -1,3 +1,5 @@
 #define LOGIN_H
 
-int login();
+int registerUser();
+int isRegisteredUser(const char* username);
+int loginUser();
