@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <unistd.h>
+#include "splash.h"
 
 void displaySplashScreen() {
 
@@ -14,6 +15,6 @@ void displaySplashScreen() {
 
      fclose(file);
      printf("\n");
-    // Wait for 3 seconds
-    sleep(3);
+    // Wait for 5 seconds
+    sleep(5);
 }
