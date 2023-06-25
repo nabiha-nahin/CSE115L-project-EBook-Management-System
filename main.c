@@ -6,12 +6,10 @@
 int main(void) {
     
     displaySplashScreen();
-
- 
-    if (loginUser()) {
-     
-        printf("Login successful.\n");
-
+    registerUser();
+    loginUser();
+    
+    
         int choice;
         do {
             
@@ -30,20 +28,14 @@ int main(void) {
                     searchBook();
                     break;
                 case 3:
-                    displayAllBooks();
-                    break;
-                case 4:
                     quitProgram();
                     break;
                 default:
                     printf("Invalid choice. Please try again.\n");
                     break;
             }
-        } while (choice != 4); // Repeat until the user chooses to quit
-    } else {
-        
-        printf("Login failed.\n");
-    }
+        } while (choice != 3); // Repeat until the user chooses to quit
+    
 
     return 0;
 }
